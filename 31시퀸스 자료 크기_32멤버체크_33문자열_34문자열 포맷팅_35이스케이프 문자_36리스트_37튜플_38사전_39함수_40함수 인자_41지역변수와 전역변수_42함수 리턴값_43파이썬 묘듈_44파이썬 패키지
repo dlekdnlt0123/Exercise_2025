@@ -1,0 +1,566 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/dlekdnlt0123/Exercise_2025/blob/main/31%EC%8B%9C%ED%80%B8%EC%8A%A4%20%EC%9E%90%EB%A3%8C%20%ED%81%AC%EA%B8%B0_32%EB%A9%A4%EB%B2%84%EC%B2%B4%ED%81%AC_33%EB%AC%B8%EC%9E%90%EC%97%B4_34%EB%AC%B8%EC%9E%90%EC%97%B4%20%ED%8F%AC%EB%A7%B7%ED%8C%85_35%EC%9D%B4%EC%8A%A4%EC%BC%80%EC%9D%B4%ED%94%84%20%EB%AC%B8%EC%9E%90_36%EB%A6%AC%EC%8A%A4%ED%8A%B8_37%ED%8A%9C%ED%94%8C_38%EC%82%AC%EC%A0%84_39%ED%95%A8%EC%88%98_40%ED%95%A8%EC%88%98%20%EC%9D%B8%EC%9E%90_41%EC%A7%80%EC%97%AD%EB%B3%80%EC%88%98%EC%99%80%20%EC%A0%84%EC%97%AD%EB%B3%80%EC%88%98_42%ED%95%A8%EC%88%98%20%EB%A6%AC%ED%84%B4%EA%B0%92_43%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EB%AC%98%EB%93%88_44%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%ED%8C%A8%ED%82%A4%EC%A7%80\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "strdata1='I love python'\n",
+        "strdata2='나는 파이썬을 사랑합니다'\n",
+        "listdata=['a','b','c',strdata1,strdata2]\n",
+        "print(len(strdata1))\n",
+        "print(len(strdata2))\n",
+        "print(len(listdata))\n",
+        "print(len(listdata[3]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zkYNygdnvGGA",
+        "outputId": "6a084a5c-ce83-463e-9438-7635c9c8fe36"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "13\n",
+            "13\n",
+            "5\n",
+            "13\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "listdata=[1,2,3,4]\n",
+        "ret1=5 in listdata\n",
+        "ret2=4 in listdata\n",
+        "print(ret1);print(ret2)\n",
+        "strdata='abcde'\n",
+        "ret3='c' in strdata\n",
+        "ret4='1' in strdata\n",
+        "print(ret3);print(ret4)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QuTV3WwZwJ3W",
+        "outputId": "051fb105-d8ce-4abf-94b3-0eb979c7a74f"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n",
+            "True\n",
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "strdata1='나는 파이썬 프로그래머다'\n",
+        "strdata2=\"You are a programmer\"\n",
+        "strdata3=\"\"\"I love\n",
+        "     python. You love\n",
+        "python too!\"\"\"\n",
+        "strdata4=\"My son's name is John\"\n",
+        "strdata5='문자열\"abc\"의 길이는 3입니다.'"
+      ],
+      "metadata": {
+        "id": "n_7GYSnEw3uk"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "txt1='자바';txt2='파이썬'\n",
+        "num1=5;num2=10\n",
+        "print('나는 %s보다 %s에 더 익숙합니다.'%(txt1,txt2))\n",
+        "print('%s은 %s보다 %d배 더 쉽습니다.'%(txt2,txt1,num1))\n",
+        "print('%d+%d=%d'%(num1,num2,num1+num2))\n",
+        "print('작년 세계 경제 성장률은 전년에 비해 %d%% 포인트 증가했다.'%num1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mNgsxiuS1Vhz",
+        "outputId": "f2ef6cc6-57c9-4b41-cfdb-2b84ccfe7279"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "나는 자바보다 파이썬에 더 익숙합니다.\n",
+            "파이썬은 자바보다 5배 더 쉽습니다.\n",
+            "5+10=15\n",
+            "작년 세계 경제 성장률은 전년에 비해 5% 포인트 증가했다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from time import sleep\n",
+        "for i in range(100):\n",
+        "  msg='\\r진행률%d%%'%(i+1)\n",
+        "  print(''*len(msg),end='')\n",
+        "  print(msg,end='')\n",
+        "  sleep(0.1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mS0WvDED1hXM",
+        "outputId": "9d6fac41-586f-42fe-8d73-401053d5fea3"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "진행률100%"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('나는 파이썬을 사랑합니다.\\n파이썬은 자바보다 훨씬 쉽습니다.')\n",
+        "print('Name:John Smith\\tSex:Male\\tAge:22')\n",
+        "print('이 문장은 화면폭에 비해 너무 길어 보기가 힘듭니다.\\\n",
+        "그래서\\\\Enter키를 이용해 문장을 다음줄과 연속되도록 했습니다.')\n",
+        "print('작은따옴표(\\')와 큰 따옴표(\")는 문자열을 정의할 때 사용합니다.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6BLSjTTg5RWg",
+        "outputId": "c0088055-e329-428d-bc61-0663c0188917"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "나는 파이썬을 사랑합니다.\n",
+            "파이썬은 자바보다 훨씬 쉽습니다.\n",
+            "Name:John Smith\tSex:Male\tAge:22\n",
+            "이 문장은 화면폭에 비해 너무 길어 보기가 힘듭니다.그래서\\Enter키를 이용해 문장을 다음줄과 연속되도록 했습니다.\n",
+            "작은따옴표(')와 큰 따옴표(\")는 문자열을 정의할 때 사용합니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list1=[1,2,3,4,5]\n",
+        "list2=['a','b','c']\n",
+        "list3=[1,'a','abc',[1,2,3,4,5],['a','b','c']]\n",
+        "list1[0]=6\n",
+        "print(list1)\n",
+        "def myfunc():\n",
+        "  print('안녕하세요')\n",
+        "list4=[1,2,myfunc]\n",
+        "list4[2]()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RdtHKeDN6nGs",
+        "outputId": "f40e726a-78b2-4dd6-ccd0-0b863b7565a4"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[6, 2, 3, 4, 5]\n",
+            "안녕하세요\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tuple1=[1,2,3,4,5]\n",
+        "tuple2=('a','b','c')\n",
+        "tuple3=(1,'a','abc',[1,2,3,4,5],['a','b','c'])\n",
+        "tuple1[0]=6\n",
+        "\n",
+        "def myfunc():\n",
+        "  print('안녕하세요')\n",
+        "\n",
+        "tuple4=(1,2,myfunc)\n",
+        "tuple4[2]()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q256PsSt8Zr6",
+        "outputId": "56ba2e5c-1f26-46ef-9447-98807c8df66c"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "안녕하세요\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1={'a':1,'b':2,'c':3}\n",
+        "print(dict1['a'])\n",
+        "dict1['d']=4\n",
+        "print(dict1)\n",
+        "dict1['b']=7\n",
+        "print(dict1)\n",
+        "print(len(dict1))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yoTsBbZa9Gkl",
+        "outputId": "4acc8495-e334-4f98-d573-17b6220caa2c"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "{'a': 1, 'b': 2, 'c': 3, 'd': 4}\n",
+            "{'a': 1, 'b': 7, 'c': 3, 'd': 4}\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add_number(n1,n2):\n",
+        "  ret=n1+n2\n",
+        "  return ret\n",
+        "\n",
+        "def add_txt(t1,t2):\n",
+        "  print(t1+t2)\n",
+        "\n",
+        "ans=add_number(10,15)\n",
+        "print(ans)\n",
+        "text1='대한민국~'\n",
+        "text2='만세!!'\n",
+        "add_txt(text1,text2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SiSyuJLT_dPg",
+        "outputId": "8031ef9c-d44a-44ac-f60f-218e2ecb3d84"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "25\n",
+            "대한민국~만세!!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from IPython.core.magic import arg_split\n",
+        "def add_txt(t1,t2='파이썬'):\n",
+        "  print(t1+':'+t2)\n",
+        "\n",
+        "add_txt('베스트')\n",
+        "add_txt(t2='대한민국',t1='1등')\n",
+        "\n",
+        "def func1(*args):\n",
+        "  print(args)\n",
+        "\n",
+        "def func2(width,height,**kwargs):\n",
+        "  print(kwargs)\n",
+        "\n",
+        "func1()\n",
+        "func1(3,5,1,5)\n",
+        "func2(10,20)\n",
+        "func2(10,20,depth=50,color='blue')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NLNFCktjAWHB",
+        "outputId": "eb79b304-ed4a-47ae-92ba-c793ee8176d5"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "베스트:파이썬\n",
+            "1등:대한민국\n",
+            "()\n",
+            "(3, 5, 1, 5)\n",
+            "{}\n",
+            "{'depth': 50, 'color': 'blue'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "param=10\n",
+        "strdata='전역변수'\n",
+        "\n",
+        "def func1():\n",
+        "  strdata='지역변수'\n",
+        "  print(strdata)\n",
+        "\n",
+        "def func2(param):\n",
+        "  param=1\n",
+        "\n",
+        "def func3():\n",
+        "  global param\n",
+        "  param=50\n",
+        "\n",
+        "func1()\n",
+        "print(strdata)\n",
+        "print(param)\n",
+        "func2(param)\n",
+        "print(param)\n",
+        "func3()\n",
+        "print(param)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pfY1JuVHB3N5",
+        "outputId": "ade5dfe9-2f6f-4fe6-b6a0-f82b25541c39"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "지역변수\n",
+            "전역변수\n",
+            "10\n",
+            "10\n",
+            "50\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def reverse(x,y,z):\n",
+        "  return z,y,x\n",
+        "\n",
+        "ret=reverse(1,2,3)\n",
+        "print(ret)\n",
+        "\n",
+        "r1,r2,r3=reverse('a','b','c')\n",
+        "print(r1);print(r2);print(r3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5Xv9mjiVC5oY",
+        "outputId": "c54222d8-4afb-4288-a78e-40a8792e917a"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(3, 2, 1)\n",
+            "c\n",
+            "b\n",
+            "a\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import time\n",
+        "\n",
+        "print('5초간 프로그램을 정지합니다.')\n",
+        "time.sleep(5)\n",
+        "print('5초가 지나갔습니다.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zgWqQNNPDc6q",
+        "outputId": "2e85cb81-af60-4722-d015-3c468e5c4209"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5초간 프로그램을 정지합니다.\n",
+            "5초가 지나갔습니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add_txt(t1,t2):\n",
+        "  return t1+':'+t2\n",
+        "\n",
+        "def reverse(x,y,z):\n",
+        "  return z,y,x"
+      ],
+      "metadata": {
+        "id": "_RL85MrsDt9U"
+      },
+      "execution_count": 38,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add_txt(t1,t2):\n",
+        "  return t1+':'+t2\n",
+        "\n",
+        "def reverse(x,y,z):\n",
+        "  return z,y,x\n",
+        "\n",
+        "# The original import statement is removed as functions are now defined locally\n",
+        "\n",
+        "ret1=add_txt('대한민국','1등')\n",
+        "ret2=reverse(1,2,3)\n",
+        "print(ret1)\n",
+        "print(ret2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XjWBBAfwEGfU",
+        "outputId": "47a9d8a3-9615-49f1-cc5e-397cf3f63560"
+      },
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "대한민국:1등\n",
+            "(3, 2, 1)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add_txt(t1,t2):\n",
+        "  return t1+':'+t2\n",
+        "\n",
+        "def reverse(x,y,z):\n",
+        "  return z,y,x\n",
+        "\n",
+        "ret1=add_txt('대한민국','1등')\n",
+        "ret2=reverse(1,2,3)\n",
+        "print(ret1)\n",
+        "print(ret2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WkywpPEhFEjG",
+        "outputId": "741dcec3-e264-453d-e5eb-d872f20b6e53"
+      },
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "대한민국:1등\n",
+            "(3, 2, 1)\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Colab 시작하기",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
